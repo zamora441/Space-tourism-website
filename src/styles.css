@@ -28,25 +28,25 @@
 
 @layer utilities{
     .bg-index{
-        background-image: url(./assets/home/background-home-mobile.jpg);
+        background-image: url(/assets/home/background-home-mobile.jpg);
         background-position: center;
         background-size: cover
     }
     
     .bg-destination{
-        background-image: url(./assets/destination/background-destination-mobile.jpg);
+        background-image: url(/assets/destination/background-destination-mobile.jpg);
         background-position: center;
         background-size: cover
     }
 
     .bg-crew{
-        background-image: url(./assets/crew/background-crew-mobile.jpg);
+        background-image: url(/assets/crew/background-crew-mobile.jpg);
         background-position: center;
         background-size: cover
     }
     
     .bg-technology{
-        background-image: url(./assets/technology/background-technology-mobile.jpg);
+        background-image: url(/assets/technology/background-technology-mobile.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -94,31 +94,31 @@
 
     @media (min-width:768px) {
         .bg-index{
-            background-image: url(./assets/home/background-home-tablet.jpg);
+            background-image: url(/assets/home/background-home-tablet.jpg);
         }
         .bg-destination {
-            background-image: url(./assets/destination/background-destination-tablet.jpg);
+            background-image: url(/assets/destination/background-destination-tablet.jpg);
         }
         .bg-crew{
-            background-image: url(./assets/crew/background-crew-tablet.jpg);
+            background-image: url(/assets/crew/background-crew-tablet.jpg);
         }
         .bg-technology {
-            background-image: url(./assets/technology/background-technology-tablet.jpg);
+            background-image: url(/assets/technology/background-technology-tablet.jpg);
         }
     }
     
     @media (min-width:1280px) {
         .bg-index{
-            background-image: url(./assets/home/background-home-desktop.jpg);
+            background-image: url(/assets/home/background-home-desktop.jpg);
         }
         .bg-destination {
-            background-image: url(./assets/destination/background-destination-desktop.jpg);
+            background-image: url(/assets/destination/background-destination-desktop.jpg);
         }
         .bg-crew {
-            background-image: url(./assets/crew/background-crew-desktop.jpg);
+            background-image: url(/assets/crew/background-crew-desktop.jpg);
         }
         .bg-technology {
-            background-image: url(./assets/technology/background-technology-desktop.jpg);
+            background-image: url(/assets/technology/background-technology-desktop.jpg);
             background-repeat: no-repeat;
         }
     }
