@@ -15,16 +15,16 @@ export default function TechnologyView() {
     }
 
     return (
-        <main className="bg-technology h-full grow flex flex-col pt-22 pb-10 md:pb-0  lg:ps-10 xl:ps-22 xl:mb-0 2xl:ps-32 3xl:ps-40">
-            <h1 className='main-title text-center text-white md:place-self-start px-6'>
+        <main className="bg-technology h-full grow flex flex-col pt-22 pb-10 md:pb-0  lg:ps-10 xl:ps-22 xl:mb-0 lg:pt-32 2xl:ps-32 2xl:pt-46 3xl:ps-40">
+            <h1 className='main-title text-center text-white md:self-start px-6 lg:-mb-20 xl:mb-0'>
                 <span className='text-gray font-bold me-4 '>03</span>
                 Space launch 101
             </h1>
             <div className='flex flex-col md:items-center lg:flex-row-reverse lg:justify-between'>
-                <Slide direction='right' duration={800}>
-                    <div className='my-8 md:mb-10 lg:mb-0 lg:self-end'>
-                        <img src={currentTechnology.images.landscape } alt="Technology image" className='lg:hidden' />
-                        <img src={currentTechnology.images.portrait} alt="Technology image" className='hidden lg:block xl:w-98 xl:h-106 2xl:w-auto 2xl:h-auto' />
+                <Slide direction='right' duration={800} className='w-full xl:w-auto'>
+                    <div className='flex my-8 md:mb-10 lg:mb-0 lg:self-end'>
+                        <img src={currentTechnology.images.landscape } alt="Technology image" className='lg:hidden w-full' />
+                        <img src={currentTechnology.images.portrait} alt="Technology image" className='hidden lg:block xl:w-98 xl:h-106 2xl:w-auto 2xl:h-auto ms-auto' />
                     </div>
                 </Slide>
 

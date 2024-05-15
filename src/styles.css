@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 @layer components{
     .navbar{
-        @apply fixed top-0 bottom-0 right-0 w-3/4 -z-10 flex flex-col justify-center gap-4 ps-8 text-base font-barlow-condensed text-white uppercase font-normal translate-x-full  transition-transform duration-500 md:translate-x-0  md:bottom-auto md:w-auto md:p-10  md:gap-8 lg:relative  lg:w-4/6   ;
+        @apply fixed top-0 bottom-0 right-0 w-3/4 -z-10 flex flex-col justify-center gap-4 ps-8 text-base font-barlow-condensed text-white uppercase font-normal translate-x-full  transition-transform duration-500 md:translate-x-0 md:bottom-auto md:w-auto md:p-10  md:gap-8 lg:relative  lg:w-7/12   ;
         letter-spacing: 0.3rem;
         background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(1rem)
@@ -30,19 +32,19 @@
     .bg-index{
         background-image: url(/assets/home/background-home-mobile.jpg);
         background-position: center;
-        background-size: cover
+        background-size: cover;
     }
     
     .bg-destination{
         background-image: url(/assets/destination/background-destination-mobile.jpg);
         background-position: center;
-        background-size: cover
+        background-size: cover;
     }
-
+    
     .bg-crew{
         background-image: url(/assets/crew/background-crew-mobile.jpg);
         background-position: center;
-        background-size: cover
+        background-size: cover;
     }
     
     .bg-technology{

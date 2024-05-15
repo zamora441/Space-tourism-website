@@ -15,21 +15,21 @@ export default function CrewView() {
     }
 
     return (
-        <main className="bg-crew h-full grow grid grid-cols-1 pt-22 pb-10 px-6 place-items-center md:pb-0 lg:grid-cols-2 lg:px-10 xl:px-24  3xl:px-40 gap-4 lg:auto-rows-fr xl:pt-0 "> 
-            <h1 className='main-title text-white md:place-self-start lg:self-center '>
+        <main className="bg-crew h-full grow grid grid-cols-1 pt-22 pb-10 px-6 place-items-center md:pb-0 lg:grid-cols-2 lg:px-10 xl:px-24  3xl:px-40 gap-4 lg:auto-rows-fr xl:pt-16 "> 
+            <h1 className='main-title text-white md:place-self-start lg:self-center lg:-mt-4 xl:mt-0'>
                 <span className='text-gray font-bold me-4 '>02</span>
                 Meet your crew
             </h1>
 
             <div className='flex justify-center border-b-1 border-b-gray w-full md:order-last md:border-b-0 lg:order-none lg:row-span-2 lg:place-self-end lg:justify-end h-min'>
                 <Zoom duration={800}>
-                    <img src={ currentMember.images.webp} alt="Crew member photo" className='w-44 h-56 md:w-103 md:h-110 xl:w-110 xl:h-114 2xl:w-114 2xl:h-124'/>
+                    <img src={ currentMember.images.webp} alt="Crew member photo" className='w-44 h-56 md:w-103 md:h-110 lg:w-106 lg:h-110 xl:w-110 xl:h-114 2xl:w-114 2xl:h-124'/>
                 </Zoom>
             </div>
 
-            <Slide className='lg:place-self-start  lg:h-full'>
-            <div className='flex flex-col items-center  lg:items-start '>
-                <ul className='flex gap-5  mb-6 lg:mt-auto xl:mb-20 '>
+            <Slide className='lg:place-self-start  lg:h-full '>
+            <div className='flex flex-col items-center  lg:items-start  h-full'>
+                <ul className='flex gap-5  mb-6 lg:mt-auto  xl:mb-14'>
                     {
                         crew && crew.map((member, index) => (
                             <li key={index} >
@@ -43,7 +43,7 @@ export default function CrewView() {
                     }
                 </ul>
 
-                <div className='flex flex-col items-center md:max-w-lg md:order-first md:mt-4 lg:items-start  2xl:max-w-2xl lg:h-76'>
+                <div className='flex flex-col items-center md:max-w-lg md:order-first md:mt-4 lg:items-start lg:-mt-10 xl:mt-0 2xl:max-w-3xl '>
                     <h2 className='text-lg text-gray  tracking-widest md:tracking-[0.2em] font-bellefair font-light  uppercase md:text-2xl md:mb-3 lg:text-4xl' >
                         {currentMember.role}
                     </h2>

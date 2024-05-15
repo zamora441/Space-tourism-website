@@ -15,8 +15,8 @@ export default function DestinationView() {
 
     return (
         <main className='bg-destination h-full grow flex flex-col pt-22 pb-10 px-6 items-center lg:flex-row lg:justify-between lg:px-10 xl:px-24 3xl:px-40'>
-            <div className='flex flex-col items-center w-full lg:w-auto'>
-                <h1 className='main-title text-white md:self-start lg:self-center lg:me-38'>
+            <div className='flex flex-col items-center jusify w-full lg:w-auto '>
+                <h1 className='main-title text-white md:self-start lg:self-center lg:me-38 xl:mb-4'>
                     <span className='font-bold text-gray me-4'>01</span> 
                     Pick your destination
                 </h1>
@@ -25,7 +25,7 @@ export default function DestinationView() {
                 </Zoom>
             </div>
             
-            <div className='flex flex-col items-center lg:items-start md:max-w-lg 2xl:max-w-2xl'>
+            <div className='flex flex-col items-center lg:self-center lg:items-start md:max-w-lg xl:mt-20 2xl:max-w-2xl'>
                 <Slide direction='left' duration={800}>
                     <ul className='flex text-sm gap-10 text-pastel-purple font-barlow-condensed font-normal uppercase  md:text-xl '>
                         {destinations && destinations.map((dest, index) => (
