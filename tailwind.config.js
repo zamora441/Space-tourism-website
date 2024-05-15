@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
+    "index.html",
     "./src/**/*.{js,jsx}",
     "./layouts/**/*.{js,jsx}",
     "./views/**/*.{js,jsx}",
@@ -30,6 +31,7 @@ export default {
         13: "3.625rem",
         22: "5.5rem",
         38: "9.375rem",
+        46: "11.5rem",
         68: "17rem",
         76: "18.75rem",
         98: "26rem",
