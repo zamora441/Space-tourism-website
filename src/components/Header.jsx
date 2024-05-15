@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 const navItems = [
@@ -10,14 +12,18 @@ const navItems = [
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-
+    let location = useLocation();
     const toggleNavbar = e => {
         e.preventDefault();
         setIsOpen(prevState => !prevState)
     }
 
+    useEffect(() => {
+        setIsOpen(false)
+    }, [location])
+
     return (
-        <header className="flex justify-between p-6  fixed w-full z-50 xl:p-10 xl:pe-0 " >
+        <header className="flex justify-between p-6  fixed w-full z-50 lg:pe-0 xl:p-10  xl:pe-0" >
             <NavLink to={'/'} className={"lg:self-center"} >
                 <img src="./logo.svg" alt="" />
             </NavLink>
